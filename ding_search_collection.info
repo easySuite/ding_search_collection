@@ -1,0 +1,6 @@
+name = Ding Search Collection
+description = Display Ting Collections.
+core = 7.x
+package = Ding!
+
+dependencies[] = ting_search

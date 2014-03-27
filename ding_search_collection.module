@@ -1,0 +1,33 @@
+<?php
+/**
+ * @file
+ * Ding Search Collection.
+ */
+
+/**
+ * Implements hook_entity_view().
+ */
+function ding_search_collection_entity_view($entity, $entity_type, $view_mode, $langcode) {
+  if ($entity_type != 'ting_collection' && $view_mode != 'teaser') {
+    return;
+  }
+  if (count($entity->entities) == 1) {
+    return;
+  }
+
+  $entity->content['#post_render'] = array('ding_search_collection_render');
+  drupal_add_css(
+    drupal_get_path('module', 'ding_search_collection') . '/ding_search_collection.css'
+  );
+}
+
+/**
+ * Post render callback.
+ *
+ * Adds collection visuals to search result.
+ */
+function ding_search_collection_render($children, $elements) {
+  return $children
+    . '<div class="collection-bg-1"></div>'
+    . '<div class="collection-bg-2"></div>';
+}
