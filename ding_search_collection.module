@@ -28,6 +28,25 @@ function ding_search_collection_entity_view($entity, $entity_type, $view_mode, $
 }
 
 /**
+ * Implements hook_theme_registry_alter().
+ */
+function ding_search_collection_theme_registry_alter(&$theme_registry) {
+  if (!empty($theme_registry['search_result'])) {
+    $theme_registry['search_result']['process functions'][] = 'ding_search_collection_search_result';
+  }
+}
+
+/**
+ * Template preprocess callback.
+ */
+function ding_search_collection_search_result(&$variables) {
+  // Check if result has collection divs.
+  if (strpos($variables['snippet'], 'collection-bg-1')) {
+    $variables['classes'] .= ' ding-search-collection';
+  }
+}
+
+/**
  * Post render callback.
  *
  * Adds collection visuals to search result.
