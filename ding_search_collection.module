@@ -52,7 +52,7 @@ function ding_search_collection_search_result(&$variables) {
  * Adds collection visuals to search result.
  */
 function ding_search_collection_render($children, $elements) {
-  return '<div class="ting-collection-wrapper">' . $children . '</div>'
+  return '<div class="collection-bg-2"></div>'
     . '<div class="collection-bg-1"></div>'
-    . '<div class="collection-bg-2"></div>';
+    . '<div class="ting-collection-wrapper">' . $children . '</div>';
 }
