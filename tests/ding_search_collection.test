@@ -1,0 +1,46 @@
+<?php
+/**
+ * @file
+ * ding_search_collection.test
+ */
+
+/**
+ * Ding Search Collection tests.
+ */
+class DingSearchCollectionTestCase extends DrupalWebTestCase {
+  /**
+   * Test info.
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Ding Search Collection tests'),
+      'description' => t('Run tests for ding_search_collection.'),
+      'group' => t('easyDDB - Ding Search Collection'),
+    );
+  }
+
+  /**
+   * Set up test.
+   */
+  public function setUp() {
+    $this->profile = 'ding2';
+    parent::setUp('ding_search_collection');
+
+    variable_set('ting_agency', '100200');
+    variable_set('ting_search_url', 'http://oss-services.dbc.dk/opensearch/');
+    variable_set('ting_scan_url', 'http://openscan.addi.dk/1.5/');
+    variable_set('ting_spell_url', 'http://openspell.addi.dk/1.2/');
+    variable_set('ting_recommendation_url', 'http://openadhl.addi.dk/1.1/');
+    variable_set('ting_search_profile', 'test');
+
+    variable_set('search_active_modules', array('ting_search' => 'ting_search'));
+  }
+
+  public function test() {
+    $this->drupalGet('search/ting/Harry Potter');
+    $this->assertRaw(
+      '<div class="collection-bg-1"></div>',
+      'Ding Search Collection was not inserted into page'
+    );
+  }
+}
