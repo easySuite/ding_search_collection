@@ -2,6 +2,7 @@ name = Ding Search Collection
 description = Display Ting Collections.
 core = 7.x
 package = easyDDB
+version = 7.x-1.0
 
 dependencies[] = ting_search
 
