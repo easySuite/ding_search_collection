@@ -16,6 +16,10 @@ function ding_search_collection_entity_view($entity, $entity_type, $view_mode, $
   if (arg(0) == 'ting' && arg(1) == 'collection') {
     return;
   }
+  // If for some reason there is no 'entities' property.
+  if (!isset($entity->entities)) {
+    return;
+  }
   // Do not show for collections that have 1 item.
   if (count($entity->entities) == 1) {
     return;
