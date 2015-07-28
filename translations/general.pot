@@ -2,13 +2,13 @@
 #
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# Generated from file: ding_search_collection.info: n/a
+# Generated from file: profiles/ding2/modules/ding_search_collection/ding_search_collection.info: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-02-19 16:14+0100\n"
+"POT-Creation-Date: 2015-07-28 11:17+0300\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ding_search_collection.info:0
+#: profiles/ding2/modules/ding_search_collection/ding_search_collection.info:0
 msgid "easyDDB Ding Search Collection"
 msgstr ""
 
-#: ding_search_collection.info:0
+#: profiles/ding2/modules/ding_search_collection/ding_search_collection.info:0
 msgid "Display Ting Collections."
 msgstr ""
 
-#: ding_search_collection.info:0
+#: profiles/ding2/modules/ding_search_collection/ding_search_collection.info:0
 msgid "easyDDB"
 msgstr ""
 
