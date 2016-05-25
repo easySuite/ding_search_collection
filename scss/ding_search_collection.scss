@@ -1,0 +1,31 @@
+div[class^="collection-bg"] {
+  background-image: url('../images/pw_maze_white.png');
+}
+.field-name-ding-entity-buttons {
+  clear: both;
+  text-align: right;
+
+  .reserve-button {
+    float: right;
+  }
+}
+
+.list-item {
+  background-image: url('../images/pw_maze_white.png');
+  padding: 15px;
+
+  &.ding-search-collection {
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 0;
+    background-image: none;
+
+    .ting-collection-wrapper {
+      position: relative;
+      padding: 15px;
+      background-image: url('../images/pw_maze_white.png');
+      box-shadow: 1px -1px 2px #888;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=35, Color='#7c7c7c')";
+    }
+  }
+}
