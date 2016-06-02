@@ -27,7 +27,7 @@ function ding_search_collection_entity_view($entity, $entity_type, $view_mode, $
 
   $entity->content['#post_render'] = array('ding_search_collection_render');
   $entity->content['#attached'] = array(
-	'css' => array( drupal_get_path('module', 'ding_search_collection') . '/css/ding_search_collection.css'),
+    'css' => array( drupal_get_path('module', 'ding_search_collection') . '/css/ding_search_collection.css'),
   );
 }
 
