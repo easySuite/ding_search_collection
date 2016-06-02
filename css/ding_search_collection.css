@@ -1,0 +1,59 @@
+div[class^="collection-bg"] {
+  background-image: url("../images/pw_maze_white.png");
+}
+
+.pane-ting-collection .field-name-ding-entity-buttons {
+  clear: both;
+  text-align: right;
+}
+.pane-ting-collection .field-name-ding-entity-buttons .reserve-button {
+  float: right;
+}
+
+.pane-search-result .search-results .list .list-item {
+  background-image: url("../images/pw_maze_white.png");
+  padding: 15px;
+}
+.pane-search-result .search-results .list .list-item.ding-search-collection {
+  margin-top: 30px;
+  margin-right: 10px;
+  padding: 0;
+  background-image: none;
+}
+.pane-search-result .search-results .list .list-item.ding-search-collection .ting-collection-wrapper {
+  position: relative;
+  padding: 15px;
+  background-image: url("../images/pw_maze_white.png");
+  box-shadow: 1px -1px 2px #888;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=35, Color='#7c7c7c')";
+}
+
+.list-item.search-result {
+  position: relative;
+}
+
+.list-item.search-result > .ting-object {
+  position: relative;
+}
+
+div[class^="collection-bg"] {
+  display: block;
+  background: #fff;
+  padding: 0;
+  -moz-box-shadow: 1px -1px 2px #888;
+  -webkit-box-shadow: 1px -1px 2px #888;
+  box-shadow: 1px -1px 2px #888;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.collection-bg-1 {
+  left: 5px;
+  top: -5px;
+}
+
+.collection-bg-2 {
+  left: 10px;
+  top: -10px;
+}
