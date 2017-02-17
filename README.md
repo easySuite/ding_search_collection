@@ -1,4 +1,11 @@
 Ding Search Collection
-======================
+==========
 
-Adds visuals to ting collection.
+THis module adds visuals to ting collection.
+
+## Requirements:
+
+## Configuration:
+Enable module on @/admin/modules page.
+
+## Usage:
