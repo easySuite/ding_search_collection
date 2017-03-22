@@ -1,7 +1,7 @@
 Ding Search Collection
 ==========
 
-THis module adds visuals to ting collection.
+This module adds visuals to ting collection.
 
 ## Requirements:
 
