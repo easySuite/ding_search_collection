@@ -26,8 +26,8 @@ function ding_search_collection_entity_view($entity, $entity_type, $view_mode, $
   }
 
   $entity->content['#post_render'] = array('ding_search_collection_render');
-  drupal_add_css(
-    drupal_get_path('module', 'ding_search_collection') . '/ding_search_collection.css'
+  $entity->content['#attached'] = array(
+    'css' => array( drupal_get_path('module', 'ding_search_collection') . '/css/ding_search_collection.css'),
   );
 }
 
@@ -44,6 +44,7 @@ function ding_search_collection_theme_registry_alter(&$theme_registry) {
  * Template preprocess callback.
  */
 function ding_search_collection_search_result(&$variables) {
+  drupal_add_css('module', 'ding_search_collection' . 'css/ding_search_collection.css');
   // Check if result has collection divs.
   if (strpos($variables['snippet'], 'collection-bg-1')) {
     $variables['classes'] .= ' ding-search-collection';
