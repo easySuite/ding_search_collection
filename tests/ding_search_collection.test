@@ -15,7 +15,7 @@ class DingSearchCollectionTestCase extends DrupalWebTestCase {
     return array(
       'name' => t('Ding Search Collection tests'),
       'description' => t('Run tests for ding_search_collection.'),
-      'group' => t('easyDDB - Ding Search Collection'),
+      'group' => t('easyOPAC - Ding Search Collection'),
     );
   }
 
