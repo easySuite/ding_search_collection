@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Poedit 1.7.4\n"
 
 #: ding_search_collection.info:0
-msgid "easyDDB Ding Search Collection"
+msgid "easyOPAC Ding Search Collection"
 msgstr "Illustrering af værksamlinger"
 
 #: ding_search_collection.info:0
@@ -27,5 +27,5 @@ msgid "Display Ting Collections."
 msgstr "Vis illustrering af værksamlinger"
 
 #: ding_search_collection.info:0
-msgid "easyDDB"
+msgid "easyOPAC"
 msgstr ""

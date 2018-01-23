@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: ding_search_collection.info:0
-msgid "easyDDB Ding Search Collection"
+msgid "easyOPAC Ding Search Collection"
 msgstr ""
 
 #: ding_search_collection.info:0
@@ -26,6 +26,6 @@ msgid "Display Ting Collections."
 msgstr ""
 
 #: ding_search_collection.info:0
-msgid "easyDDB"
+msgid "easyOPAC"
 msgstr ""
 
