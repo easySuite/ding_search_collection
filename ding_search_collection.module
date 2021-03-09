@@ -8,10 +8,15 @@
  * Implements hook_entity_view().
  */
 function ding_search_collection_entity_view($entity, $entity_type, $view_mode, $langcode) {
+  if ($entity_type == 'ting_collection' && $view_mode == 'minimal') {
+    return;
+  }
+
   // Apply only to ting_collection teaser.
   if ($entity_type != 'ting_collection' && $view_mode != 'teaser') {
     return;
   }
+
   // Do not show on collection page.
   if (arg(0) == 'ting' && arg(1) == 'collection') {
     return;
