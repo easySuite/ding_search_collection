@@ -1,67 +1,41 @@
-div[class^="collection-bg"] {
-  background: #e5e5e5;
-}
-
-.pane-ting-collection {
-  .field-name-ding-entity-buttons {
-    clear: both;
-    text-align: right;
-
-    .reserve-button {
-      float: right;
-    }
-  }
-}
-
 .pane-search-result {
   .search-results {
     .list-item {
-      &.ding-search-collection {
-        margin-top: 30px;
-        margin-right: 10px;
-        padding: 0;
-        background-image: none;
+      &.search-result {
+        position: relative;
 
-        .ting-collection-wrapper {
-         .ting-object.imagestyle-ting-cover-small {
-          background: #e5e5e5;
-          -moz-box-shadow: 1px -1px 2px #888;
-          -webkit-box-shadow: 1px -1px 2px #888;
-          box-shadow: 1px -1px 2px #888;
-         }
+        &.ding-search-collection {
+          margin-top: 30px;
+          margin-right: 10px;
+          padding: 0;
+          background-image: none;
+
+          div[class^="collection-bg"] {
+            background: #e5e5e5;
+            display: block;
+            padding: 0;
+            -moz-box-shadow: 1px -1px 2px #888;
+            -webkit-box-shadow: 1px -1px 2px #888;
+            box-shadow: 1px -1px 2px #888;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
+          .collection-bg-1 {
+            left: 5px;
+            top: -5px;
+          }
+          .collection-bg-2 {
+            left: 10px;
+            top: -10px;
+          }
+        }
+        & > .ting-object { 
+          position: relative;
         }
       }
     }
   }
-}
-
-.list-item.search-result {
-  position: relative;
-}
-
-.list-item.search-result > .ting-object {
-  position: relative;
-}
-
-div[class^="collection-bg"] {
-  display: block;
-  padding: 0;
-  -moz-box-shadow: 1px -1px 2px #888;
-  -webkit-box-shadow: 1px -1px 2px #888;
-  box-shadow: 1px -1px 2px #888;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.collection-bg-1 {
-  left: 5px;
-  top: -5px;
-}
-
-.collection-bg-2 {
-  left: 10px;
-  top: -10px;
 }
 
 #popupbar {
