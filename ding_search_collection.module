@@ -8,14 +8,14 @@
  * Implements hook_entity_view().
  */
 function ding_search_collection_entity_view($entity, $entity_type, $view_mode, $langcode) {
+  // Check that ting_collection has teaser display.
+  $display_is_teaser = $entity_type == 'ting_collection' && $view_mode == 'teaser';
+
   // Apply only to ting_collection teaser.
-  if ($entity_type != 'ting_collection' && $view_mode != 'teaser') {
+  if (!$display_is_teaser) {
     return;
   }
-  // Do not show on collection page.
-  if (arg(0) == 'ting' && arg(1) == 'collection') {
-    return;
-  }
+
   // If for some reason there is no 'entities' property.
   if (!isset($entity->entities)) {
     return;
